@@ -5,7 +5,7 @@
     <Content Include=".vscode\tasks.json" />
     <Content Include="Program.cs" />
   </ItemGroup>
-  <Target Name="Build">
+  <Target Name="build">
     <Csc Sources="@(Content)" />
   </Target>
   <PropertyGroup>
