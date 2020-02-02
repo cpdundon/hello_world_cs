@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project name="system" default="build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Content Include=".vscode\launch.json" />
+    <Content Include=".vscode\tasks.json" />
+    <Content Include="Program.cs" />
+  </ItemGroup>
+  <Target Name="Build">
+    <Csc Sources="@(Content)" />
+  </Target>
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+</Project>
